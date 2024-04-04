@@ -16,11 +16,11 @@ func main() {
 }
 
 //converting bidirectional to send only type channel
-func foo(c chan<- int){
-	c<-43             //sending 43 to channel
+func foo(c chan<- int) {
+	c <- 43 //sending 43 to channel
 }
 
 //converting bidirectional to receive only type channel
-func bar(c <-chan int){
-	fmt.Println(<-c)           //receiving and print the output
+func bar(c <-chan int) {
+	fmt.Println(<-c) //receiving and print the output
 }

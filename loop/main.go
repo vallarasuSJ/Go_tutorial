@@ -5,7 +5,7 @@ import (
 	"math/rand"
 )
 
-func init(){
+func init() {
 	fmt.Println("This is starts from initialization")
 }
 
@@ -32,19 +32,19 @@ func main() {
 	// 	}
 	// }
 
-	i:=rand.Intn(19)
-	for i<=20{
+	i := rand.Intn(19)
+	for i <= 20 {
 		fmt.Println(i)
 		i++
-	}   
+	}
 
 	// for{
 	// 	if i>=10{
 	// 		break
 	// 	}
 	// 	fmt.Println()
-	
-	// } 
+
+	// }
 
 	//for range
 	// a:=[]int{12,3,5,7,8}
@@ -52,26 +52,24 @@ func main() {
 	// 	fmt.Println("index ",b,"value ", c)
 	// }
 
-	m:=map[string]int{
-		"kv":21,
-		"chaitanya":22,
+	m := map[string]int{
+		"kv":        21,
+		"chaitanya": 22,
 	}
 
-	for k,v:=range m{
-		fmt.Println("key ", k , "value ",v)
+	for k, v := range m {
+		fmt.Println("key ", k, "value ", v)
 	}
 
-	age:=m["kv"]
+	age := m["kv"]
 	fmt.Println(age)
-//comma ok idiom
-	if v,ok:=m["q"];!ok{
-		fmt.Println("there is no q",v)
+	//comma ok idiom
+	if v, ok := m["q"]; !ok {
+		fmt.Println("there is no q", v)
 	}
 
-	if v,ok:=m["kv"];ok{
-		fmt.Println("kv is there",v)
+	if v, ok := m["kv"]; ok {
+		fmt.Println("kv is there", v)
 	}
 
-
-	
 }

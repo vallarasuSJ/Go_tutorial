@@ -21,7 +21,7 @@ func main() {
 	}
 
 	bs, err := toJson(p1)
-	if err!=nil{
+	if err != nil {
 		log.Println(err)
 		return
 	}
@@ -29,12 +29,12 @@ func main() {
 	fmt.Println(string(bs))
 }
 
-func toJson(a interface{} )([]byte,error){
-	bs,err :=json.Marshal(a) 
+func toJson(a interface{}) ([]byte, error) {
+	bs, err := json.Marshal(a)
 
-	if err!=nil{
+	if err != nil {
 		// return []byte{},fmt.Errorf("There was an error in json %v",err)
-		return []byte{},errors.New(fmt.Sprintf("There was an error in json %v",err))
+		return []byte{}, errors.New(fmt.Sprintf("There was an error in json %v", err))
 	}
-	return bs,nil
+	return bs, nil
 }

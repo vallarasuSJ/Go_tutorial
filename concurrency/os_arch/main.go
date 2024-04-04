@@ -5,10 +5,8 @@ import (
 	"runtime"
 )
 
-//race condition
 func main() {
 
-	fmt.Println(runtime.GOOS , " " ,runtime.GOARCH)
-	
-	
+	fmt.Println(runtime.GOOS, " ", runtime.GOARCH)
+
 }

@@ -16,7 +16,7 @@ func TestMySum(t *testing.T) {
 	for _, v := range tests {
 		x := mySum(v.data...)
 		if x != v.answer {
-			t.Error("Expected", v.answer," but got ",x)
+			t.Error("Expected", v.answer, " but got ", x)
 		}
 	}
 }

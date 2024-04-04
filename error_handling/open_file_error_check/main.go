@@ -9,15 +9,15 @@ import (
 func main() {
 	f, err := os.Open("name.txt")
 
-	if err!=nil{
+	if err != nil {
 		fmt.Println(err)
 		return
 	}
 
 	defer f.Close()
 
-	bs,err:=io.ReadAll(f)
-	if err!=nil{
+	bs, err := io.ReadAll(f)
+	if err != nil {
 		fmt.Println(err)
 	}
 

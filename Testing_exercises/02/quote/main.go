@@ -1,7 +1,7 @@
 //Package quote exists solely for storing quotes as constants.
-package quote 
+package quote
 
-const SunAlso=`Celebrate the beauty of life's journey, for within its twists and turns lie the seeds of growth and the tapestry of our experiences. Each step forward is a testament to our resilience, each challenge a chance to learn, and each triumph a cause for celebration. Embrace the moments that shape us, for they are the threads that weave the fabric of our existence.
+const SunAlso = `Celebrate the beauty of life's journey, for within its twists and turns lie the seeds of growth and the tapestry of our experiences. Each step forward is a testament to our resilience, each challenge a chance to learn, and each triumph a cause for celebration. Embrace the moments that shape us, for they are the threads that weave the fabric of our existence.
 
 In the grand tapestry of life, every individual is a unique thread, contributing their own color and texture to the collective masterpiece. Our paths may diverge, but our interconnectedness remains, binding us together in a shared human experience. Let us cherish the diversity that enriches our journey, finding unity in our differences and strength in our solidarity.
 

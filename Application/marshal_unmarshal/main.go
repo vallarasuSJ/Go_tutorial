@@ -28,7 +28,7 @@ func main() {
 	}
 	b, err := json.Marshal(group)
 	if err != nil {
-		log.Fatalf("error ", err)
+		log.Fatalf("error %v", err)
 	}
 
 	fmt.Println(string(b))
@@ -41,7 +41,7 @@ func main() {
 	var animals []Animal
 	err = json.Unmarshal(jsonBlob, &animals)
 	if err != nil {
-		log.Fatalf("error ", err)
+		log.Fatalf("error %v ", err)
 	}
 	fmt.Println(animals)
 

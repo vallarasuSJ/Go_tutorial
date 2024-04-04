@@ -19,8 +19,8 @@ func main() {
 		Sayings: []string{"Shaken", "Any last wishes?", "Never say never"},
 	}
 
-	bs, err := json.Marshal(p1) 
-	if err!=nil{
+	bs, err := json.Marshal(p1)
+	if err != nil {
 		log.Fatalln("Json didn't marshal.Here's the error", err)
 	}
 	fmt.Println(string(bs))
